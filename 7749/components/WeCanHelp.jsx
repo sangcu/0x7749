@@ -1,39 +1,48 @@
 import BenchmarkIcon from '../assets/benchmark.svg'
-const heros = [
-  {
-    key:1,
-    name: 'LOST OF CONTROL',
-    title: 'Are you delegating your own career development to your company?',
-    icon: BenchmarkIcon
-  },
-  {
-    key:2,
-    name: 'No direction',
-    title: 'You don’t know what next after a few years? your career like its what is it. No plan, no strategy.',
-  },
-  {
-    key:3,
-    name: 'ANXIOUS',
-    title: 'My career go nowhere after a few years. In the next 5 year, I will change my career to something else, just don’t know yet!',
-  },
-]
-
-export default function YourFuture() {
+import RoadmapIcon from '../assets/roadmap.svg'
+import WeWinIcon from '../assets/we-win.svg'
+export default function WeCanHelp() {
   return (
     <ul role="list" className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      {heros.map((hero) => (
-        <li key={hero.key} className="col-span-1 ">
+        <li className="col-span-1 ">
           <div className="w-full flex items-center justify-between p-6 space-x-6">
             <div className="flex-1 ">
               <div className="flex items-center space-x-3">
-        {()=>hero.icon}
-                <h3 className="font-semibold uppercase text-xl">{hero.name}</h3>
+<BenchmarkIcon/>
+                <h3 className="font-semibold uppercase text-xl text-boldpink">Upskill</h3>
               </div>
-              <p className="mt-1 text-gray-800 ">{hero.title}</p>
+              <p className="mt-1 text-gray-800 ">
+Our AI Benchmark yourself to <span className='font-semibold'>1500+</span> engineers in the market to find which area to improve. Privacy first.
+              </p>
             </div>
           </div>
         </li>
-      ))}
+        <li className="col-span-1 ">
+          <div className="w-full flex items-center justify-between p-6 space-x-6">
+            <div className="flex-1 ">
+              <div className="flex items-center space-x-3">
+                <RoadmapIcon/>
+                <h3 className="font-semibold uppercase text-xl text-boldpink">CAREER ROADMAP</h3>
+              </div>
+              <p className="mt-1 text-gray-800 ">
+Our AI Benchmark yourself to other in the market to find which area to improve. Privacy first.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li className="col-span-1 ">
+          <div className="w-full flex items-center justify-between p-6 space-x-6">
+            <div className="flex-1 ">
+              <div className="flex items-center space-x-3">
+      <WeWinIcon/>
+                <h3 className="font-semibold uppercase text-xl text-boldpink">GET YOUR DREAM JOB</h3>
+              </div>
+              <p className="mt-1 text-gray-800 ">
+              Building a career takes time and effort. Fortunately, when done correctly it will pay off. Make a bet.
+              </p>
+            </div>
+          </div>
+        </li>
     </ul>
   )
 }

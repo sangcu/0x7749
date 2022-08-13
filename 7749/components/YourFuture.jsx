@@ -3,7 +3,7 @@ const heros = [
   {
     key:1,
     name: 'LOST OF CONTROL',
-    title: 'Are you delegating your own career development to your company?',
+    title: 'Are you delegating your career development to your company?',
   },
   {
     key:2,
@@ -13,7 +13,7 @@ const heros = [
   {
     key:3,
     name: 'ANXIOUS',
-    title: 'In the next 5 year, I will change my career to something else, just don’t know yet!',
+    title: 'Next 5 years, I will change my career to something else, but don’t know it yet!',
   },
 ]
 
