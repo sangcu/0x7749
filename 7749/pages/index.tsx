@@ -10,7 +10,9 @@ const Home: NextPage = () => {
   return (
     <div className="">
       <Head>
-        <title>Createn Next App</title>
+        <title>
+          0x7749 | Helping software engineers thriving in career development
+        </title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
