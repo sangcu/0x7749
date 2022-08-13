@@ -38,7 +38,7 @@ Our AI Benchmark yourself to <span className='font-semibold'>1500+</span> engine
                 <h3 className="font-semibold uppercase text-xl text-boldpink">GET YOUR DREAM JOB</h3>
               </div>
               <p className="mt-1 text-gray-800 ">
-              Building a career takes time and effort. Fortunately, when done correctly it will pay off. Make a bet.
+              We connect you to recruiters which match your career wish and competences. Focus on your career development, we do the rest.
               </p>
             </div>
           </div>
