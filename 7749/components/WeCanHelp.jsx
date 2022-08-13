@@ -24,8 +24,8 @@ Our AI Benchmark yourself to <span className='font-semibold'>1500+</span> engine
                 <RoadmapIcon/>
                 <h3 className="font-semibold uppercase text-xl text-boldpink">CAREER ROADMAP</h3>
               </div>
-              <p className="mt-1 text-gray-800 ">
-Our AI Benchmark yourself to other in the market to find which area to improve. Privacy first.
+              <p className="mt-1 text-gray-800">
+              Recommending actionable insights to refine your career roadmap based on goals.
               </p>
             </div>
           </div>
