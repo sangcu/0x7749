@@ -13,7 +13,7 @@ const heros = [
   {
     key:3,
     name: 'ANXIOUS',
-    title: 'Next 5 years, I will change my career to something else, but don’t know it yet!',
+    title: 'Next 5 years, you plan to change your career to something else, but don’t know it yet!',
   },
 ]
 
