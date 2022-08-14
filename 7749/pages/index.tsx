@@ -7,20 +7,37 @@ import Logo from "../assets/logo.svg";
 import YourFutureIcon from "../assets/your-future.svg";
 import WeCanHelpIcon from "../assets/we-can-help.svg";
 import ImInIcon from "../assets/im-in.svg";
+import Script from "next/script";
+import { useState } from "react";
 const Home: NextPage = () => {
+  const [imIn, setImIn] = useState(false);
+  const keep = new Date().getTime();
+  const joinIn = () => {
+    const current = new Date().getTime();
+    const metricValue = current - keep;
+    window.ga("set", "metric1", metricValue);
+    setImIn(true);
+  };
+
   return (
     <div className="">
+      <Script
+        strategy="lazyOnload"
+        src="https://www.googletagmanager.com/gtag/js?id=UA-47496563-1"
+      ></Script>
+      <Script>
+        {`
+                     window.dataLayer = window.dataLayer || [];
+                     function gtag(){dataLayer.push(arguments);}
+                     gtag('js', new Date());
+                     gtag('config', 'UA-47496563-1');
+        `}
+      </Script>
       <Head>
         <title>
           0x7749 | Helping software engineers thriving in career development
         </title>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap"
-          rel="stylesheet"
-        />
       </Head>
 
       <main className="container mx-auto md max-w-6xl">
@@ -62,7 +79,17 @@ const Home: NextPage = () => {
             <div className="grow h-14"></div>
             <div className="grow-0 h-14">
               <p className="m-0 text-center pt-5">
-                <ImInIcon className="cursor-pointer hover:ring-boldpink hover:ring-4 hover:rounded-xl active:ring-boldpink active:ring-4 active:rounded-xl" />
+                {imIn ? (
+                  <>
+                    Thank for join us. Subscribe to hear our latest news.
+                    https://sangcu.substack.com/
+                  </>
+                ) : (
+                  <ImInIcon
+                    onClick={() => joinIn()}
+                    className="cursor-pointer hover:ring-boldpink hover:ring-4 hover:rounded-xl active:ring-boldpink active:ring-4 active:rounded-xl"
+                  />
+                )}
               </p>
             </div>
             <div className="grow h-14"></div>
