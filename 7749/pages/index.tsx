@@ -15,7 +15,7 @@ const Home: NextPage = () => {
   const joinIn = () => {
     const current = new Date().getTime();
     const metricValue = current - keep;
-    window.ga("set", "metric1", metricValue);
+    (window as any).ga("set", "metric1", metricValue);
     setImIn(true);
   };
 
