@@ -35,10 +35,10 @@ Our AI Benchmark yourself to <span className='font-semibold'>1500+</span> engine
             <div className="flex-1 ">
               <div className="flex items-center space-x-3">
       <WeWinIcon/>
-                <h3 className="font-semibold uppercase text-xl text-boldpink">GET YOUR DREAM JOB</h3>
+                <h3 className="font-semibold uppercase text-xl text-boldpink">Steady Income</h3>
               </div>
               <p className="mt-1 text-gray-800 ">
-              We connect you to recruiters which match your career wish and competences. Focus on your career development, we do the rest.
+              Connect you to recruiters who match your career wish and competencies. No cover letter, CV.
               </p>
             </div>
           </div>
